@@ -33,11 +33,9 @@ mkdir -p "$INSTALL_DIR"
 
 info "Downloading goinfre.py → $INSTALL_PATH"
 curl -fsSL "$DOWNLOAD_URL" -o "$INSTALL_PATH"
-success "Downloaded goinfre.py"
-
 info "Downloading packages.conf → $INSTALL_DIR/packages.conf"
 curl -fsSL "$CONFIG_URL" -o "$INSTALL_DIR/packages.conf"
-success "Downloaded packages.conf"
+success "Downloaded goinfre.py and packages.conf"
 
 # ── 2. Permissions ────────────────────────────────────────────────────────────
 chmod +x "$INSTALL_PATH"
