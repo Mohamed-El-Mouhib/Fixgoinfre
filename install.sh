@@ -26,7 +26,7 @@ fi
 # ── 1. Download goinfre.py ────────────────────────────────────────────────────
 INSTALL_DIR="$HOME/.local"
 INSTALL_PATH="$INSTALL_DIR/goinfre.py"
-DOWNLOAD_URL="https://raw.githubusercontent.com/mohamed-el-mouhib/Fixgoinfre/main/install.sh"
+DOWNLOAD_URL="https://raw.githubusercontent.com/mohamed-el-mouhib/Fixgoinfre/master/install.sh"
 
 info "Downloading goinfre.py → $INSTALL_PATH"
 mkdir -p "$INSTALL_DIR"
