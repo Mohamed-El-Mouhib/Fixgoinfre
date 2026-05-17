@@ -29,11 +29,15 @@ INSTALL_PATH="$INSTALL_DIR/goinfre.py"
 DOWNLOAD_URL="https://raw.githubusercontent.com/mohamed-el-mouhib/Fixgoinfre/master/goinfre.py"
 CONFIG_URL="https://raw.githubusercontent.com/mohamed-el-mouhib/Fixgoinfre/master/packages.conf"
 
-info "Downloading goinfre.py → $INSTALL_PATH"
 mkdir -p "$INSTALL_DIR"
+
+info "Downloading goinfre.py → $INSTALL_PATH"
 curl -fsSL "$DOWNLOAD_URL" -o "$INSTALL_PATH"
-curl -fsSL "$CONFIG_URL" -o "$INSTALL_DIR/packages.conf"
 success "Downloaded goinfre.py"
+
+info "Downloading packages.conf → $INSTALL_DIR/packages.conf"
+curl -fsSL "$CONFIG_URL" -o "$INSTALL_DIR/packages.conf"
+success "Downloaded packages.conf"
 
 # ── 2. Permissions ────────────────────────────────────────────────────────────
 chmod +x "$INSTALL_PATH"
